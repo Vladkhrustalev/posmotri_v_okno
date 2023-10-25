@@ -7,18 +7,20 @@
 
 html {
   block-size: 100%;
+  display: table;
+  margin: auto;
 }
 
 
 .page {
+  display: table-cell;
+  vertical-align: middle;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  overflow: hidden;
 }
 
 
@@ -46,7 +48,6 @@ ol {
 .content {
   margin: auto;
   display: flex;
-  padding: 133px 33px;
 }
 
 
@@ -145,7 +146,7 @@ ol {
 
 .content__video-card-description-container {
   width: 200px;
-  height: 101px;
+  min-height: 101px;
 }
 
 
@@ -181,11 +182,6 @@ ol {
 }
 
 
-.search-form__pseudo-checkbox:active {
-  background: #FFF;
-}
-
-
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -208,7 +204,7 @@ ol {
 .search-form__fieldset-title {
   padding-bottom: 5px;
   color: #FFF;
-  font-family: Fira Sans Condensed, Times, serif;
+  font-family: 'Fira Sans Condensed', Times, serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -216,7 +212,7 @@ ol {
 }
 
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -300,7 +296,7 @@ ol {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed, Times, serif;
+  font-family: 'Fira Sans Condensed', Times, serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
